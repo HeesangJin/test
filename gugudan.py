@@ -13,3 +13,4 @@ while k<=max:
         print('')
     k+=3
     print('')
+#kiikikkii
