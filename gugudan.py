@@ -9,7 +9,7 @@ while k<=max:
         for i in range(k,k+3,1):
             if i==10:
                 break
-            print(i,'*',j,'=',i*j,end='  ')
+            print('{0:<3}*  {1:<3}=  {2:<9}'.format(i,j,i*j),end='')
         print('')
     k+=3
     print('')
