@@ -197,7 +197,7 @@ char *read_server(int client) {
     int bytes_read;
     bytes_read = read(client, input, sizeof(input));
     if (bytes_read > 0) {
-        printf("received [%s]\n", input);
+        printf("received [%s]\n %d", input, bytes_read);
         return input;
     } else {
         return NULL;
