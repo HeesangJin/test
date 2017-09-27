@@ -191,9 +191,10 @@ int init_server() {
     return client;
 }
 
-char input[1024] = { 0 };
+
 char *read_server(int client) {
     // read data from the client
+    char input[1024] = { 0 };
     int bytes_read;
     bytes_read = read(client, input, sizeof(input));
     if (bytes_read > 0) {
